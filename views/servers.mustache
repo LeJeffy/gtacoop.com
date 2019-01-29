@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>GTA CooP - Serverlist</title>
+    <link href="logo.png" rel="icon" type="image/png" />
+
+    <meta name="description" content="GTA Co-op is a multiplayer modification for Grand Theft Auto Five, that utilizes none of the online code from Rockstar.">
+    <meta name="keywords" content="GTA mod, GTA5 mod, GTA co-op, GTA co-op mod, gta modification, gta5 modification, gta5 modification co-op, gta mod 2018, GTA CooP">
+
+    <meta property="og:url" content="https://gtacoop.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title"content="GTA CooP - Servers" />
+    <meta property="og:description" content="GTA CooP is a multiplayer modification for Grand Theft Auto Five, that utilizes none of the online code from Rockstar." />
+    <meta property="og:image" content="https://gtacoop.com/logo.png" />
+    <meta name="theme-color" content="#2c2c54">
+
+    <link href="https://fonts.googleapis.com/css?family=Abel|Righteous|K2D" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
+    <link href="style.css?v=2.0-new" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="branding">
+          <img src="logo.png"/>
+        </div>
+        <div class="burger-menu"><i class="fas fa-align-right"></i></div>
+        <ul>
+          {{ #items }}
+            <li><a href="{{ url }}">{{ name }}</a></li>
+          {{ /items }}
+        </ul>
+      </div>
+    </header>
+    <section class="downloads servers">
+      <div class="cover">
+        <div class="row">
+          <h2>Server List</h2>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="row drag-top">
+      <div class="online">There are <b> {{ online }} </b> players playing on <b> {{ servers.length }}</b> servers</div>
+      <ul>
+        {{ #servers }}
+        <li>
+          <div class="name">{{ serverName }}</div>
+          <div class="gamemode">{{ gamemode }}</div>
+          <div class="players">{{ playerCount }}/{{ maxPlayers }}</div>
+          <div class="address">
+            {{ #passwordProtected }}<img src="https://api.iconify.design/twemoji:locked.svg?height=18">{{ /passwordProtected }}
+            {{^passwordProtected}}<img src="https://api.iconify.design/twemoji:globe-with-meridians.svg?height=18">{{ /passwordProtected }}
+            <kbd>{{ address }}<kbd>
+          </div>
+        </li>
+        {{ /servers }}
+      </ul>
+      </div>
+    </section>
+    <script type='text/javascript' src='https://code.jquery.com/jquery-latest.min.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("div.burger-menu").click(function(){
+        $("header ul").slideToggle()
+      });
+    });
+    </script>
+  </body>
+</html>

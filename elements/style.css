@@ -1,0 +1,374 @@
+body {
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+.noscroll {
+    height: 100%;
+    overflow: hidden;
+    background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+      ),
+      url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2f3640;
+}
+.row {
+	margin: auto;
+	max-width: 920px;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+header li {
+    cursor: pointer;
+    float: left;
+    font-weight: 100;
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+header li a {
+    padding: 29px 25px 27px;
+    color: #b2bec3;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.4s;
+}
+header li a:hover {
+    color: #ffffff;
+    transition: 0.4s;
+}
+header .branding {
+    float: left;
+}
+header .branding img {
+    max-height: 80px;
+}
+.burger-menu {
+    float: right;
+    font-size: 28px;
+    padding: 26px 24px 25px 0px;
+    color: #ffffff;
+    display: none;
+}
+main {
+    z-index: 3;
+    color: #ffffff;
+    transform: translate(-0%,-50%);
+    -webkit-transform: translate(-0%,-50%);
+    -ms-transform: translate(-0%,-50%);
+    -moz-transform: translate(-0%,-50%);
+    -o-transform: translate(-0%,-50%);
+    position: absolute;
+    top: calc(50% + 40px);
+    width: 100%;
+}
+.line {
+    margin-top: 12px;
+    width: 15%;
+    border-radius: 90px;
+    background-color: rgba(246,229,141, 0.7);
+    height: 6px;
+}
+h2 {
+    font-size: 28px;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Righteous', cursive;
+    width: 55%;
+}
+h3 {
+    margin: 10px 0px 0px 0px;
+    color: #ffffff;
+    font-weight: 100;
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    width: 55%;
+}
+main a {
+    background-color: #ffffff;
+    font-family: 'Abel', sans-serif;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 11px 24px 9px 24px;
+    border-radius: 90px;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 15px;
+    margin-top: 20px;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+main a:hover {
+    background-color: #dfe6e9;
+    transition: 0.5s;
+}
+main a img {
+    margin-bottom: -4px;
+    padding-right: 6px;
+}
+.downloads .cover {
+    background:
+    linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.8)
+    ),
+    url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2f3640;
+    padding: 180px 0px 15px;
+}
+.latest .title {
+    font-weight: 100;
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+}
+.latest .title i {
+    padding-right: 8px;
+}
+.latest .downloads {
+    float: right;
+    font-weight: 100;
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+}
+.latest .downloads i {
+    padding-left: 8px;
+}
+.downloads ul {
+    padding: 0px 0px 25px 0px;
+    margin: 0px;
+}
+.downloads li {
+    list-style: none;
+    font-weight: 100;
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+    padding: 20px 20px 18px 20px;
+    box-sizing: border-box;
+    display: inline-flex;
+    width: 100%;
+    margin: 5px 0px;
+    background-color: #ecf0f1;
+    border-radius: 6px;
+}
+.downloads li:last-child {
+    border-bottom: 0px;
+}
+.downloads li i {
+    padding-right: 8px;
+}
+li .address img {
+    margin-bottom: -3.5px;
+    padding-right: 4px;
+}
+.downloads li .downloads a {
+    background-color: rgba(0,0,0,0.8);
+    color: #ffffff;
+    padding: 7px 14px 6px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.5s;
+    margin-left: 5px;
+}
+.downloads li .downloads a:hover {
+    background-color: rgba(0,0,0,0.9);
+    transition: 0.5s;
+}
+.downloads li .version a {
+    color: #0984e3;
+    text-decoration: none;
+}
+.downloads h2 {
+    width: 100%;
+    color: #ffffff;
+}
+.downloads li .version {
+    width: 50%;
+}
+.downloads li .downloads {
+    width: 50%;
+    text-align: right;
+}
+.list-header {
+    background-color: #2d3436;
+    color: #ffffff;
+    font-weight: 100;
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+    padding: 12px 5px;
+    box-sizing: border-box;
+}
+.list-header i {
+    padding-right: 8px;
+}
+.list-header .version {
+    width: 50%;
+    float: left;
+}
+.version img {
+    margin-bottom: -4px;
+    padding-right: 5px;
+}
+.list-header .downloads {
+    width: 50%;
+    text-align: right;
+    float: right;
+}
+.servers li {
+    display: block;
+    padding: 13px 10px 13px 15px;
+    margin: 9px 0px;
+}
+.servers .version img {
+    margin-bottom: -2px;
+    padding-right: 0px;
+}
+.servers li .name, .servers li .gamemode {
+    display: inline-block;
+}
+.gamemode {
+    background-color: rgba(119,139,235, 0.5);
+    padding: 3px 12px 2px 14px;
+    font-size: 16px;
+    border-radius: 90px;
+    margin-top: -2px;
+}
+.online {
+    font-weight: 100;
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+    padding: 10px 12px 8px 12px;
+    box-sizing: border-box;
+    display: inline-flex;
+    width: 100%;
+    background-color: #ecf0f1;
+    border-radius: 6px;
+}
+.online b {
+    padding: 0px 3px;
+}
+.address {
+    font-size: 15px;
+}
+.players {
+    float: right;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 9px 14px 7px;
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 4px;
+    margin-right: 5px;
+    border-radius: 6px;
+}
+@media screen and (min-width: 760px) and (max-width: 920px) {
+    .row {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .burger-menu {
+        display: unset;
+    }
+    header ul {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+    h2 {
+        width: 100%;
+        font-size: 22px;
+    }
+    h3 {
+        width: 100%;
+        font-size: 18px;
+    }
+    .line {
+        width: 30%;
+    }
+    main a {
+        font-size: 14px;
+        margin: 10px 5px 0px 0px;
+    }
+    .row {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+    }
+    .background-over {
+        display: none;
+    }
+    .noscroll {
+        background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+      ),
+      url("background.png");
+    }
+    header li {
+        width: 100%;
+    }
+    header li a {
+        padding: 12px 25px 17px;
+    }
+    header .row {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .top-pick .downloads {
+        display: none;
+    }
+    .downloads li {
+        display: inline-block;
+        padding-top: 14px;
+        padding-bottom: 12px;
+    }
+    .downloads li .version {
+        width: 100%;
+        float: right;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .downloads li .downloads {
+        width: 100%;
+        float: right;
+        text-align: left;
+    }
+    .downloads li .downloads a {
+        background-color: rgba(0,0,0,0.8);
+        color: #ffffff;
+        padding: 7px 12px 6px 5px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 14px;
+        transition: 0.5s;
+        display: inline-block;
+        margin-bottom: 5px;
+        margin-left: 0px;
+    }
+    .downloads li .downloads a i {
+        padding-left: 4px;
+    }
+}   

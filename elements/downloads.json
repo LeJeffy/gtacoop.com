@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Server v0.9.3.5",
+        "changelog": false,
+        "downloads": {
+            "windows": "https://files.theindra.eu/gtacoop/server/windows-0.9.3.5.zip",
+            "linux": "https://files.theindra.eu/gtacoop/server/linux-0.9.3.5.zip",
+            "client": false
+        }
+    },
+    {
+        "name": "v0.9.3.4",
+        "changelog": "https://files.theindra.eu/gtacoop/changelog-0.9.3.4.txt",
+        "downloads": {
+            "windows": "https://files.theindra.eu/gtacoop/server/windows-0.9.3.5.zip",
+            "linux": "https://files.theindra.eu/gtacoop/server/linux-0.9.3.5.zip",
+            "client": "https://files.theindra.eu/gtacoop/client/client-0.9.3.4.zip"
+        }
+    },
+    {
+        "name": "v0.9.3.3",
+        "changelog": "https://files.theindra.eu/gtacoop/changelog-0.9.3.3.txt",
+        "downloads": {
+            "windows": false,
+            "linux": false,
+            "client": "https://files.theindra.eu/gtacoop/client/client-0.9.3.3.zip"
+        }
+    },
+    {
+        "name": "v0.9.3.2",
+        "changelog": "https://files.theindra.eu/gtacoop/commits.txt",
+        "downloads": {
+            "windows": "https://files.theindra.eu/gtacoop/server/windows-0.9.3-no-tpslimit.zip",
+            "linux": "https://files.theindra.eu/gtacoop/server/linux-0.9.3-no-tpslimit.zip",
+            "client": "https://files.theindra.eu/gtacoop/client/client-0.9.3.2.zip"
+        }
+    }
+]

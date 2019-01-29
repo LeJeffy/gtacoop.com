@@ -26,14 +26,14 @@ app.use('/', express.static('elements'));
 
 // home page:
 app.get('/', (req, res) => {
-	res.render('index', { 
+	res.status(200).render('index', { 
 		items: menuItems
 	});
 });
 
 // downloads page:
 app.get('/downloads', (req, res) => {
-	res.render('downloads', { 
+	res.status(200).render('downloads', { 
 		items: menuItems,
 		downloads: downloadsItems
 	});
@@ -41,11 +41,27 @@ app.get('/downloads', (req, res) => {
 
 // servers page:
 app.get('/servers', (req, res) => {
-	res.render('servers', {
+	res.status(200).render('servers', {
 		items: menuItems,
 		servers: serverManager.servers, 
 		online: serverManager.servers.reduce((a, b) => +a + +b.playerCount, 0), 
 		serverCount: serverManager.servers.length
+	});
+});
+
+// 404 page:
+app.use(function (req, res, next) {
+	res.status(404).render('404', {
+		items: menuItems,
+		error: 'This page doesn\'t exist or is removed'
+	});
+});
+
+// 500 page:
+app.use(function(err, req, res, next) {
+	res.status(500).render('500', {
+		items: menuItems,
+		error: err.stack.split('\n').shift()
 	});
 });
 
